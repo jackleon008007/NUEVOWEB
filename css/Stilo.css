@@ -196,6 +196,31 @@ body{
     margin-right: 10px;
 
 }
+
+.opciones h4{
+    font-family: Roboto, sans-serif;
+    font-weight: lighter;
+    text-align: center;
+}
+
+.opciones p{
+    font-family: "Open Sans", sans-serif;
+    text-align: center;
+}
+
+.opcion{
+    margin-top: 5vh;
+    text-align: center;
+    height: 30vh;
+    width: 20vw;
+}
+
+.fila{
+    margin: 0 8vw;
+    display: flex;
+    justify-content: space-between;
+}
+
 .tabla{
 
     display: block;
