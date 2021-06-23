@@ -18,19 +18,67 @@
 }
 
 body{
-    font-family: Arial;
     margin: 0;
     padding: 0;
 }
 
+.servicios{
+    margin: 0;
+}
+
+.servicio1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.servicio1 img{
+    margin-left: 8vw;
+    width:40vw;
+}
+
+.ser1_textos{
+    width: 40vw;
+    margin-right: 8vw;
+}
+
+.ser2_textos{
+    width: 40vw;
+    margin-left: 8vw;
+}
+
+.servicio2 img{
+    margin-right: 8vw;
+    width:40vw;
+}
+
+.servicio2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.ser_titulo{
+    font-family: Roboto, sans-serif;
+    font-size: 2vw;
+    font-weight: normal;
+    text-align: center;
+}
+
+.ser_parrafo{
+    font-family: "Open Sans", sans-serif;
+    font-size: 1vw;
+    text-align: justify;
+}
+
 .titulo{
-    background: #51D1F6;
+
     width: 100%;
-    margin-top: 70px;
     padding-top: 5px;
     padding-bottom: 5px;
     padding-right: 0;
     padding-left: 0;
+    text-align: center;
 }
 
 .titulo h1{
