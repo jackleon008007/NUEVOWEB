@@ -278,7 +278,6 @@ body{
     background: #343759;
     color: #f1f1f2;
     transition: .5s all;
-    transform: scale(1.1);
     cursor: pointer;
 }
 
