@@ -7,7 +7,7 @@ $(document).ready(function (){
 
     $('.nuestrosServicios').click(function (){
         $('body,html').animate({
-            scrollTop: '630px'
+            scrollTop: '610px'
         });
     })
     $('.NuestroTrabajo').click(function (){
@@ -17,7 +17,7 @@ $(document).ready(function (){
     })
     $('.Contactanos').click(function (){
         $('body,html').animate({
-            scrollTop: '4000px'
+            scrollTop: '3800'
         });
     })
 })
