@@ -17,7 +17,7 @@ $(document).ready(function (){
     })
     $('.Contactanos').click(function (){
         $('body,html').animate({
-            scrollTop: '3800'
+            scrollTop: '3400px'
         });
     })
 })
