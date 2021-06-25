@@ -7,12 +7,12 @@ $(document).ready(function (){
 
     $('.nuestrosServicios').click(function (){
         $('body,html').animate({
-            scrollTop: '785px'
+            scrollTop: '630px'
         });
     })
     $('.NuestroTrabajo').click(function (){
         $('body,html').animate({
-            scrollTop: '2850px'
+            scrollTop: '2490px'
         });
     })
     $('.Contactanos').click(function (){
