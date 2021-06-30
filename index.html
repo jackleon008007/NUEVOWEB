@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.css">
-    <link rel ="stylesheet" type ="text/css" href ="css/Stilo.css">
+    <link rel="stylesheet" type="text/css" href="css/Stilo.css">
     <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300&family=Nunito&display=swap" rel="stylesheet">
     <title>SocialDoc</title>
     <script src="https://code.jquery.com/jquery-latest.js"></script>
@@ -14,59 +14,76 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
     <script src="Arriba.js"></script>
-    
+
 </head>
 <body>
 
 <header class="header">
-    <nav class="nav">
-        <img class="logo" src="img/logo%20recortado.png" >
-        <ul class ="menu">
-            <li class="Contactanos" ><a href="#">Contactanos</a></li>
-            <li class="NuestroTrabajo"><a href="#">Precios</a></li>
-            <li class="nuestrosServicios"><a href="#">Nuestro Servicios</a></li>
-            <li class="Inicio"><a href="#">Inicio</a></li>
-        </ul>
-    </nav>
+    <div class="contenedor-nav">
+        <img class="logo" src="img/logo%20recortado.png">
+        <span class="icono-menu"><img src="img/ico-hamburguesa.png" width=40rem height=40rem></span>
+        <nav class="nav">
+            <ul>
+                <li class="Inicio"><a href="#">Inicio</a></li>
+                <li class="¿Qué ofrece SocialDoc?"><a href="#">¿Qué ofrece SocialDoc?</a></li>
+                <li class="¿Por qué escoger SocialDoc"><a href="#">¿Por qué escoger SocialDoc?</a></li>
+                <li class="Precios"><a href="#">Precios</a></li>
+                <li class="Contáctanos"><a href="#">Contáctanos</a></li>
+            </ul>
+        </nav>
+
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    </div>
+
 </header>
 <main>
-<section class = "portada">
-    <div class="por_textos">
-    <h1 class="por_tit">¡La mejor comunidad de médicos te espera! </h1>
-    <p class="por_subtit">Pregunta a cualquier médico en cualquier parte del Perú y encuentra informacion actualizada</p>
-    <img class="desc_play" src="img/playstore.png">
-        <img class="desc_app" src="img/appstore.png">
-    </div>
-</section>
+    <section class="portada">
+        <div class="por_textos">
+            <h1 class="por_tit">¡La mejor comunidad de médicos te espera! </h1>
+            <p class="por_subtit">Pregunta a cualquier médico en cualquier parte del Perú y encuentra informacion
+                actualizada</p>
+            <img class="desc_play" src="img/playstore.png">
+            <img class="desc_app" src="img/appstore.png">
+        </div>
+    </section>
 
 
     <section class="servicios">
-        <div class="titulo" >
-            <h1>¿Que ofrece SocialDoc?</h1>
+        <div class="titulo">
+            <h1>¿Qué ofrece SocialDoc?</h1>
         </div>
-        <div class="servicio1">
+        <div class="serv">
             <img class="ser1_img" src="img/conectar.jpg">
             <div class="ser1_textos">
-            <h4 class="ser_titulo">Conecta con cualquier doctor del Perú para realizar interconsultas</h4>
-            <p class="ser_parrafo">Busca a un doctor por su nombre o especialidad para conectar. Revisa el perfil del doctor y verifica que la cuenta esté verificada para mayor confianza y seguridad. Luego, envía mensajes de texto sobre tu consulta y listo. Además de resolver tus dudas, podrás hacer nuevos amigos dentro de esta gran comunidad.</p>
-            </div>
-        </div>
-        <div class="servicio2">
-            <div class="ser2_textos">
-            <h4 class="ser_titulo">Encuentra información actualizada al instante</h4>
-            <p class="ser_parrafo">Contamos con una gran base de datos de artículos científicos y un gran equipo capacitado para traerte las noticias más recientes. Las noticias lo encuentras en diferentes secciones como los más populares, los más recientes, entre otros. Además, podrás comentar el artículo científico para expresar tu opinión y así interactuar con tu comunidad.</p>
+                <h4 class="ser_titulo">Conecta con cualquier doctor del Perú para realizar interconsultas</h4>
+                <p class="ser_parrafo">Busca a un doctor por su nombre o especialidad para conectar. Revisa el perfil
+                    del
+                    doctor y verifica que la cuenta esté verificada para mayor confianza y seguridad. Luego, envía
+                    mensajes
+                    de texto sobre tu consulta y listo. Además de resolver tus dudas, podrás hacer nuevos amigos dentro
+                    de
+                    esta gran comunidad.</p>
             </div>
             <img class="ser2_img" src="img/buscar.jpg">
+            <div class="ser2_textos">
+                <h4 class="ser_titulo">Encuentra información actualizada al instante</h4>
+                <p class="ser_parrafo">Contamos con una gran base de datos de artículos científicos y un gran equipo
+                    capacitado para traerte las noticias más recientes. Las noticias lo encuentras en diferentes
+                    secciones
+                    como los más populares, los más recientes, entre otros. Además, podrás comentar el artículo
+                    científico
+                    para expresar tu opinión y así interactuar con tu comunidad.</p>
+            </div>
         </div>
 
     </section>
 
-<section class="Escoger-Socialdoc">
-    <div class="titulo" >
-        <h1>¿Por qué escoger SocialDoc?</h1>
-        <p class="parrafo-1">Sumérgete dentro de una comunidad increíble</p>
-    </div>
-    <div class="opciones">
+    <section class="Escoger-Socialdoc">
+        <div class="titulo">
+            <h1>¿Por qué escoger SocialDoc?</h1>
+            <p class="parrafo-1">Sumérgete dentro de una comunidad increíble</p>
+        </div>
+        <div class="opciones">
             <div class="opcion">
                 <img src="img/op1.png">
                 <h4>Información accesible</h4>
@@ -112,38 +129,38 @@
                 <h4>Conoce nuevos doctores</h4>
                 <p>Amplia tu círculo social y conoce nuvos doctores de cualquier parte del Perú</p>
             </div>
-    </div>
-</section>
+        </div>
+    </section>
 
     <section class="Precios">
 
-        <div class="titulo" >
+        <div class="titulo">
             <h1>Precios</h1>
         </div>
 
-<div class="contenedor-Precios">
-    <div class="tabla">
-        <h2>Gratis</h2>
-        <h3>S/. 0</h3>
-        <p>- Acceso a estudios científicos limitados</p>
-        <p>- Solo podrás conectar con 5 doctores máximo</p>
-        <p>- No podrás comentar las publicaciones</p>
-        <p>- Baja prioridad al verificar tu cuenta</p>
-        <a href="" class="boton">Paga ahora</a>
-    </div>
-    <div class="tabla">
-        <h2>Estándar</h2>
-        <h3>S/. 6</h3>
-        <p>- Acceso a todos los estudios científicos</p>
-        <p>- Podrás conectar con los doctores que quieras</p>
-        <p>- Podrás comentar las publicaciones</p>
-        <p>- Alta prioridad al verificar tu cuenta</p>
-        <a href="" class="boton">Paga ahora</a>
-    </div>
-</div>
+        <div class="contenedor-Precios">
+            <div class="tabla">
+                <h2>Gratis</h2>
+                <h3>S/. 0</h3>
+                <p>- Acceso a estudios científicos limitados</p>
+                <p>- Solo podrás conectar con 5 doctores máximo</p>
+                <p>- No podrás comentar las publicaciones</p>
+                <p>- Baja prioridad al verificar tu cuenta</p>
+                <a href="" class="boton">Paga ahora</a>
+            </div>
+            <div class="tabla">
+                <h2>Estándar</h2>
+                <h3>S/. 6</h3>
+                <p>- Acceso a todos los estudios científicos</p>
+                <p>- Podrás conectar con los doctores que quieras</p>
+                <p>- Podrás comentar las publicaciones</p>
+                <p>- Alta prioridad al verificar tu cuenta</p>
+                <a href="" class="boton">Paga ahora</a>
+            </div>
+        </div>
     </section>
     <section class="contenedor-contact">
-        <div class="titulo" >
+        <div class="titulo">
             <h1 class="title left">Contáctanos</h1>
             <p class="parrafo-1">Encuentra más información</p>
         </div>
