@@ -467,7 +467,7 @@ body{
     max-width: calc(100vw - 40px);
     box-sizing:border-box;
     font-family:'Montserrat',sans-serif;
-    position:relative
+    position:relative;
 }
 .titlecontact{
     margin:10px 0;
@@ -535,7 +535,7 @@ span{
 .container{
     position: fixed;
     bottom: 20px;
-    margin-left: 95%;
+    margin-left: 90%;
 }
 .redes a, .btn-mas label{
     display: block;
@@ -617,6 +617,11 @@ span{
         display: block;
         cursor: pointer;
     }
+
+
+
+
+
 }
 
 @media screen and (max-width: 1380px){
@@ -641,6 +646,9 @@ span{
         font-size: 1rem;
         font-weight: bold;
     }
+
+
+
 }
 
 @media screen and (max-width: 1255px){
@@ -668,3 +676,73 @@ span{
 
 }
 
+
+
+@media screen and (max-width: 1000px){
+    .social-networks{
+        display: block;
+        margin-top: 65%;
+        margin-bottom:2vh;
+        margin-left: 30%;
+    }
+}
+
+@media screen and (max-width: 1290px){
+    .social-networks{
+        display: block;
+        margin-top: 45%;
+        margin-bottom:2vh;
+        margin-left: 30%;
+    }
+}
+@media screen and (max-width: 700px){
+    .social-networks{
+        display: block;
+        margin-top: 90%;
+        margin-bottom:8vh;
+        margin-left: 30%;
+    }
+}
+
+
+@media screen and (min-width: 700px) and (max-width: 900px){
+    .social-networks{
+        display: block;
+        margin-top: 76%;
+        margin-bottom:8vh;
+        margin-left: 30%;
+    }
+}
+@media screen and (min-width: 900px) and (max-width: 1000px){
+    .social-networks{
+        display: block;
+        margin-top: 60%;
+        margin-bottom:8vh;
+        margin-left: 30%;
+    }
+}
+
+@media screen and (min-width: 401px) and (max-width: 590px){
+    .social-networks{
+        display: block;
+        margin-top: 100%;
+        margin-bottom:10vh;
+        margin-left: 30%;
+    }
+}
+@media screen and (min-width: 200px) and (max-width: 400px){
+    .social-networks{
+        display: block;
+        margin-top: 250%;
+        margin-bottom:25vh;
+        margin-left: 30%;
+    }
+}
+@media screen and (min-width: 0px) and (max-width: 200px){
+    .social-networks{
+        display: block;
+        margin-top: 250%;
+        margin-bottom:200vh;
+        margin-left: 30%;
+    }
+}
