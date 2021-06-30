@@ -35,8 +35,8 @@ body{
 }
 
 .servicio1{
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 25rem), 1fr));
     align-items: center;
 }
 
@@ -61,8 +61,8 @@ body{
 }
 
 .servicio2{
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 25rem), 1fr));
     align-items: center;
 }
 
@@ -180,22 +180,19 @@ body{
     margin-top: 3vh;
 }
 
-
 .contenedor-Precios{
-    width: 60%;
-    max-width:900px;
-    margin: 0 auto;
+    margin: 0;
     height: auto;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 27rem), 1fr));
+    justify-items: center;
 }
 .contenedor-Precios div{
+    max-width: 450px;
     display: inline-table;
     padding: 0;
-    margin-left: 10px;
-    margin-right: 10px;
-
+    margin-left: 5vw;
+    margin-right: 5vw;
 }
 
 .contenedor-Precios p{
@@ -210,25 +207,22 @@ body{
 
 .opciones p{
     font-family: "Open Sans", sans-serif;
-    text-align: center;
 }
 
 .opcion{
     margin-top: 5vh;
     text-align: center;
-    height: 30vh;
-    width: 20vw;
+    height: auto;
+    width: 300px;
 }
 
-.fila{
-    margin: 0 8vw;
-    display: flex;
-    justify-content: space-between;
+.opciones{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 24rem), 1fr));
+    justify-items: center;
 }
 
 .tabla{
-
-    display: block;
     width: 40%;
     height: 50px;
     margin: 5px;
@@ -279,32 +273,6 @@ body{
     color: #f1f1f2;
     transition: .5s all;
     cursor: pointer;
-}
-
-@media screen and (max-width: 1000px){
-    .tabla{
-        width: 45%;
-        max-width:none;
-        margin-bottom: 40px;
-        flex-grow: initial;
-    }
-}
-
-@media screen and (max-width: 700px){
-    .tabla{
-        width: 45%;
-        padding:30px;
-    }
-    .tabla > h2{
-        margin-top:40px;
-    }
-}
-
-@media screen and (max-width:550px){
-    .tabla{
-        width: 85%;
-        padding: 20px;
-    }
 }
 
 .block{
@@ -412,7 +380,6 @@ body{
 
     padding: 0px;
 
-
 }
 .contenedor-contact{
     display: block;
@@ -448,6 +415,7 @@ body{
     border-radius: 50%;
     margin: 0 6px;
     transition: transform 0.4s;
+
 }
 
 .social-networks a:hover {
@@ -553,7 +521,7 @@ span{
 .container{
     position: fixed;
     bottom: 20px;
-    margin-left: 200vh;
+    margin-left: 95%;
 }
 .redes a, .btn-mas label{
     display: block;
@@ -590,148 +558,4 @@ span{
 #btn-mas:checked ~ .btn-mas label{
     transform: rotate(135deg);
     font-size: 25px;
-}
-
-@media (min-width: 400px) {
-    .pricing-plans {
-        padding-right: 2em;
-        padding-left: 2em;
-        width: 100%;
-    }
-
-    .featured-plan {
-        transform: scale(1.05);
-    }
-}
-
-@media (min-width: 33.75em) {
-    .pricing-plans .module-title {
-        margin-bottom: 1em;
-    }
-
-    .pricing-tables {
-        flex-flow: row wrap;
-    }
-
-    .pricing-plan {
-        flex-grow: 1;
-        width: 50%;
-    }
-
-    .pricing-plan:first-child {
-        border-right: 0;
-        border-bottom: 0;
-    }
-
-    .featured-plan {
-        margin-top: 0.6em;
-        order: 0;
-    }
-
-    .pricing-plan:nth-child(3) {
-
-    }
-
-    .pricing-plan:last-child {
-        border-top: 2px solid #DDD;
-        border-left: 0;
-    }
-
-    .no-flexbox .pricing-plan {
-        width: 48%;
-    }
-
-    .plan-title {
-        font-size: 0.875em;
-    }
-}
-
-@media (min-width: 48em) {
-    .no-flexbox .pricing-plan {
-        width: 24%;
-    }
-
-    .plan-type {
-        font-size: 0.7em;
-        margin: 0.5em 0 0 1em;
-        padding-bottom: 0.2em;
-    }
-
-    .featured-ribbon {
-        font-size: 0.65em;
-    }
-}
-
-@media (min-width: 62em) {
-    .pricing-tables {
-        padding-top: 3em;
-    }
-
-    .pricing-plan {
-        flex-grow: 1;
-        width: 25%;
-    }
-
-    .featured-plan {
-        margin-top: 0;
-        order: 0;
-    }
-
-    .pricing-plan:first-child, .pricing-plan:nth-child(2n) {
-        border-bottom: 2px solid #DDD;
-    }
-
-    .pricing-plan .plan-features span {
-        display: block !important;
-    }
-
-    .plan-cost {
-        display: flex;
-        flex-flow: row wrap;
-        align-items: center;
-        justify-content: center;
-        font-size: 1em;
-    }
-
-    .plan-cost span {
-        color: #BBB;
-        font-size: 1.5em;
-        font-weight: 400;
-        padding-right: 0.15em;
-        padding-left: 0.15em;
-    }
-
-    .plan-price {
-        font-size: 3.25em;
-    }
-
-    .btn-plan {
-        font-size: 0.875em;
-    }
-
-    .featured-ribbon {
-        font-size: 0.45em;
-        left: -68px;
-        line-height: 25px;
-    }
-}
-
-@media (min-width: 75em) {
-    .plan-cost {
-        font-size: 1em;
-    }
-}
-
-@media (min-width: 100em) {
-    .pricing-tables {
-        margin: 0 auto;
-        max-width: 75.00em;
-    }
-}
-
-@media (min-width: 62em) {
-    .demo-wrap {
-        padding-top: 0;
-        height: 100vh;
-    }
 }
