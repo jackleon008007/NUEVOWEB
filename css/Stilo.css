@@ -129,12 +129,12 @@ body{
 
 .titulo h1{
     font-family: Nunito;
-    font-size: 3vw;
+    font-size: 3rem;
 }
 
 .titulo p{
     font-family: Mulish;
-    font-size: 1.5vw;
+    font-size: 1.5rem;
     margin: 0px;
     padding-bottom: 20px;
 }
@@ -472,7 +472,7 @@ body{
 .titlecontact{
     margin:10px 0;
     padding-bottom:10px;
-    width:20vw;
+    width:auto;
     color:#78788c;
     border-bottom: 3px solid #78788c;
 }
@@ -515,7 +515,7 @@ button:hover{
 .form1 div{
     content:'Hi';
     position:absolute;
-    bottom:-15px;right:-20px;
+    bottom:-15px;right:5px;
     background:#50505a;
     color:#fff;
     width:320px;
@@ -702,6 +702,28 @@ span{
         margin-bottom:8vh;
         margin-left: 30%;
     }
+    .por_tit{
+        font-family: Nunito;
+        font-size: 1.2rem;
+    }
+
+    .portada p{
+        font-family: Mulish;
+        font-size: 0.6rem;
+        font-weight: bold;
+    }
+    .titulo h1{
+        font-family: Nunito;
+        font-size: 2rem;
+    }
+
+    .titulo p{
+        font-family: Mulish;
+        font-size: 1.2rem;
+        margin: 0px;
+        padding-bottom: 20px;
+    }
+
 }
 
 
@@ -712,6 +734,7 @@ span{
         margin-bottom:8vh;
         margin-left: 30%;
     }
+
 }
 @media screen and (min-width: 900px) and (max-width: 1000px){
     .social-networks{
